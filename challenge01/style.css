@@ -29,5 +29,13 @@ body {
   margin: 0 auto;
 
   padding: 2em;
-  height: 300px;
+  /* height: 300px; */
+  /* To solve the 2nd point I removed the set height to let the content decide what would be the height based on the padding of the element and the content*/
+}
+
+
+/* To solve the first point I added a width to the content */
+
+.intro-content{
+  width: 50%; /*It represent the 50% of his parent element, in this case the div with the class container*/
 }
