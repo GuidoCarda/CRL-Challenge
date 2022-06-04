@@ -1,0 +1,64 @@
+:root{
+  --clr-bg: #23424A;
+  --clr-accent: #38CFD9;
+  --clr-primary: #136C72;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+
+.intro{
+  background: var(--clr-bg);
+  color: white;
+  padding: 2rem 0;
+}
+
+.container{
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-content{
+  width: 55%;
+  padding: 5rem 0;
+}
+
+.intro-content p,
+.intro-content button{
+  font-size: 1,3rem;
+}
+
+.intro-content p{
+  margin-top: 1rem;
+  color: rgb(223, 223, 223);
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+.intro-btn{
+  cursor: pointer;
+  margin-top: 2rem;
+  background: var(--clr-accent);
+  color: var(--clr-bg);
+  border: none;
+  border-radius: 2rem;
+  padding: .8rem 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
