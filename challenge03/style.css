@@ -20,7 +20,7 @@ h1{
 }
 
 
-.intro{
+.hero{
   background: var(--clr-bg);
   color: white;
   padding: 2rem 0;
@@ -32,24 +32,24 @@ h1{
   margin: 0 auto;
 }
 
-.intro-content{
+.hero__text{
   width: 55%;
   padding: 5rem 0;
 }
 
-.intro-content p,
-.intro-content button{
+.hero__text p,
+.hero__text button{
   font-size: 1,3rem;
 }
 
-.intro-content p{
+.hero__text p{
   margin-top: 1rem;
   color: rgb(223, 223, 223);
   line-height: 1.5;
   max-width: 60ch;
 }
 
-.intro-btn{
+.btn{
   cursor: pointer;
   margin-top: 2rem;
   background: var(--clr-accent);
