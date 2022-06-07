@@ -1,0 +1,100 @@
+:root{
+  --clr-bg: #23424A;
+  --clr-accent: #38CFD9;
+  --clr-primary: #136C72;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 31px;
+  margin-bottom: 1rem;
+}
+
+section{
+  padding: 3rem 0;
+}
+
+.hero{
+  background: var(--clr-bg);
+  color: white;
+}
+
+.container{
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero__text{
+  width: 55%;
+  padding: 4rem 0;
+}
+
+.hero__text p,
+.hero__text button{
+  font-size: 1,3rem;
+}
+
+.hero__text p{
+  margin-top: 1rem;
+  color: rgb(223, 223, 223);
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+.btn{
+  cursor: pointer;
+  margin-top: 2rem;
+  background: var(--clr-accent);
+  color: var(--clr-bg);
+  border: none;
+  border-radius: 2rem;
+  padding: .8rem 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+.row{
+  display: flex;
+  /* gap: 1rem; */
+}
+
+.col{
+  text-align: center;
+}
+
+.first {
+  color: #87629A;
+  margin-bottom: 1rem;
+}
+
+.first p{
+  color: #3A3A3A;
+}
+
+
+/* Selects the adjacent siblign*/
+.col + .col {
+  margin-left: 2rem;
+}
+
+.second{
+  color: white;
+  background: #136C72;
+}
+
