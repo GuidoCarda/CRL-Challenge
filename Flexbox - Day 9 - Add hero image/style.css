@@ -40,8 +40,14 @@ section{
 }
 
 .hero__text{
-  width: 55%;
-  padding: 4rem 0;
+  background: red;
+  width: 60%;
+}
+
+.hero__img{
+  align-self: flex-start;
+  border: 5px solid green;
+  width: 30%;
 }
 
 .hero__text p,
@@ -70,34 +76,4 @@ section{
 
 .row{
   display: flex;
-  /* gap: 1rem; */
 }
-
-.col{
-  text-align: center;
-}
-
-.three-col {
-  padding: 3rem 0;
-}
-
-.three-col h2{
-  color: #87629A;
-  margin-bottom: 1rem;
-}
-
-.three-col p{
-  color: #3A3A3A;
-}
-
-/* Selects the adjacent siblign*/
-.col + .col {
-  margin-left: 2rem;
-}
-
-.two-col{
-  color: white;
-  background: #136C72;
-  padding: 3rem 0;
-}
-
