@@ -15,6 +15,10 @@ html{
   font-family: 'Roboto', sans-serif;
 }
 
+img{
+  max-width: 100%;
+}
+
 h1{
   font-size: 3rem;
 }
@@ -31,21 +35,24 @@ section{
 .hero{
   background: var(--clr-bg);
   color: white;
+  padding: 5rem 0;
 }
 
 .container{
-  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero__text{
-  background: red;
   width: 60%;
 }
 
 .hero__img{
-  align-self: flex-start;
   border: 5px solid green;
   width: 30%;
 }
@@ -74,6 +81,3 @@ section{
   white-space: nowrap;
 }
 
-.row{
-  display: flex;
-}
