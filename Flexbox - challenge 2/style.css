@@ -120,3 +120,16 @@ p{
     padding: 1rem;
     text-align: center;
 }
+
+/* Points to have in mind */
+
+/* 
+    Try to use semantic html tags as much as posible
+    for example: main, section, aside...
+
+    If you dont have the need of having a section with a color background 
+    that expand across the 100% width of the page with the content contained, 
+    you can obviate the use of a section with a wrapper div inside. 
+    In this case you can use the container class in the same tag that the content 
+    is contained in, reducing markup
+*/
