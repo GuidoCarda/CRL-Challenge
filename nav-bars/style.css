@@ -104,10 +104,24 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
     flex-grow: 1;
 }
+
 .nav2 .nav__item + .nav__item{
+    margin-left: 1rem;
+}
+
+/* Third nav bar */
+.nav3{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav__list--primary{
+    margin-inline: auto;
+}
+.nav3 .nav__item + .nav__item{
     margin-left: 1rem;
 }
 
