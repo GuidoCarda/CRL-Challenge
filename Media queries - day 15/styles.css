@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+
+.example{
+  width: 90%;
+  margin: 5rem auto;
+  padding: 10rem 0;
+  background-color: steelblue;
+}
+
+/* Keep in mind that the order you put things in is important because they overwrite */
+@media (min-width: 600px){
+  .example{
+    background-color: olivedrab;
+  }
+}
+
+@media (min-width: 1000px){
+  .example{
+    background-color: orangered;
+  }
+}
+
+@media (max-width: 600px){
+}
