@@ -140,7 +140,7 @@ header{
     background-color: #316b6f;
 }
 
-@media (max-width: 600px){
+@media (max-width: 800px){
     .row{
         display: block;
     }
