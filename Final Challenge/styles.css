@@ -8,11 +8,14 @@
 
 *, *::after, *::before{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  margin: 0;
+html{
+  font-family: 'open sans';
 }
+
 
 a{
   text-decoration: none;
@@ -26,6 +29,7 @@ p{
 .container{
   width: min(90%, 1200px);
   margin: 0 auto;
+  position: relative;
 }
 
 .nav-toggle{
@@ -33,10 +37,19 @@ p{
   height: 3rem;
   width: 3rem;
   border-radius: .3rem;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
 }
 
 .hamburger{
+ 
+}
 
+.logo{
+  border: 1px solid red;
+  display: inline-flex;
+  height: 3rem;
 }
 
 header{
@@ -45,27 +58,79 @@ header{
   text-align: center;
 }
 
-
 .nav{
-  border: 1px solid black;
+  width: 100%;
+  color: #fff;
+  margin-top: 2rem;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
 }
 
+.nav--visible{
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
 
 .nav__list{
   list-style: none;
-  border: 2px solid green;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__item{
+  width: 100%;
 }
 
 .nav__list--primary{
   margin-bottom: 1rem;
 }
 
-
-
 .nav__link{
   display: block;
-  width: 100%;
   padding: .5rem 0;
+  text-transform: uppercase;
+}
+
+.nav__link:hover{
+  background-color: #3B4050;
+  color: var(--primary-clr);
+}
+
+
+/* Intro section */
+
+.intro{
+  background-color: var(--dark-bg-300);
+  padding: 5rem 0;
+}
+
+.intro__title{
+  font-weight: 900;
+  font-size: 90px;
+  color: #fff;
+}
+
+.intro__title--accent{
+  color: var(--primary-clr);
+}
+
+.intro__desc{
+  font-size: 21px;
+  color: rgb(204, 204, 204);
+  margin-top: 1rem;
+}
+
+.intro__desc button{
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  background-color: var(--primary-clr);
+  color: white;
+  border-radius: 10rem;
+  font-size: 21px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
 }
