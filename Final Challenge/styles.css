@@ -16,6 +16,14 @@ html{
   font-family: 'open sans';
 }
 
+img{
+  max-width: 100%;
+}
+
+h2{
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
 
 a{
   text-decoration: none;
@@ -27,7 +35,7 @@ p{
 }
 
 .container{
-  width: min(90%, 1200px);
+  width: min(85%, 1200px);
   margin: 0 auto;
   position: relative;
 }
@@ -43,11 +51,37 @@ p{
 }
 
 .hamburger{
- 
+ width: 50%;
+ height: 3px;
+ background: rgb(80, 80, 80);
+ display: block;
+ position: absolute;
+ top: 40%;
+ right: 50%;
+ transform: translate(50%, 90%);
+}
+
+.hamburger::before{
+  content: '';
+  display: block;
+  width: 80%;
+  height: 3px;
+  background: rgb(80, 80, 80);
+  position: absolute;
+  top: 8px;
+}
+
+.hamburger::after{
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: rgb(80, 80, 80);
+  position: absolute;
+  bottom: 8px;
 }
 
 .logo{
-  border: 1px solid red;
   display: inline-flex;
   height: 3rem;
 }
@@ -104,12 +138,15 @@ header{
 
 .intro{
   background-color: var(--dark-bg-300);
+  min-height: 660px;
+  display: flex;
+  align-items: center;
   padding: 5rem 0;
 }
 
 .intro__title{
   font-weight: 900;
-  font-size: 90px;
+  font-size: 42px;
   color: #fff;
 }
 
@@ -133,4 +170,80 @@ header{
   font-weight: bold;
   cursor: pointer;
   margin-top: 1rem;
+  border: none;
+}
+
+
+.section-two{
+  background: rgb(246, 246, 246);
+  color: var(--dark-bg-500);
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.section-two h2{
+  color: var(--primary-clr);
+  font-size: 30px;
+}
+
+.section-two .col + .col{
+  margin-top:  2rem;
+}
+
+
+/* section three */
+
+.section-three{
+  padding: 5rem 0;
+}
+
+.section-three .section-title{
+  color: var(--primary-clr);
+}
+
+.section-three img{
+  margin-block: 1rem;
+}
+
+.features{
+  margin-top: 2rem;
+}
+
+.features > div{ 
+  background-color: var(--dark-bg-500);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.features > div + div{
+  margin-top: 1rem;
+}
+
+
+/* footer */
+.footer{
+  background: var(--dark-bg-500);
+  padding: 5rem 0;
+  color: var(--secondary-clr);
+}
+
+.footer__title{
+  color: var(--light-bg);
+  font-size: 24px;
+}
+
+.footer__list-container{
+  margin-top: 1rem;
+}
+
+.footer__list-title{
+  color: var(--primary-clr);
+}
+
+.footer__list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
